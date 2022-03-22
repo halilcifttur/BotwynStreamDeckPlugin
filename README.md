@@ -15,7 +15,7 @@ A Counter Plugin for Stream Deck and Live Streams, Integrated with Counter Funct
 - the plugin works with two counter
 -- one for main character death count
 -- one for total death count
--- the initial counts and the descriptions of both counters can be set from the plugin settings page
+-- the initial counts and the prefixes of both counters can be set from the plugin settings page
 
     ![](Images/Counter_Settings.png)
 
@@ -27,7 +27,7 @@ A Counter Plugin for Stream Deck and Live Streams, Integrated with Counter Funct
 
     ![](Images/Counter_File.png)
 
-- the descriptions of both counters can be seen in the txt file
+- the prefixes of both counters can be seen in the txt file
 
     ![](Images/TXT_Description_Example.png)
 
