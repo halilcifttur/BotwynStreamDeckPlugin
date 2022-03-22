@@ -38,4 +38,4 @@ Please contact the developer on Discord `Elongef#5854`
 
 ## License
 
-MIT
+![MIT](LICENSE)
