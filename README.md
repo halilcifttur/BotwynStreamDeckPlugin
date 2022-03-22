@@ -29,7 +29,7 @@ A Counter Plugin for Stream Deck and Live Streams, Integrated with Counter Funct
 
 - the prefixes of both counters can be seen in the txt file
 
-    ![](Images/TXT_Description_Example.png)
+    ![](Images/TXT_Prefix_Example.png)
 
 ## I found a bug, who do I contact? I have a feature request, who do I contact?
 Please contact the developer on Discord `Elongef#5854` 
