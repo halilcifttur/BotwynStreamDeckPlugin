@@ -36,7 +36,7 @@ namespace BotwynStreamDeckPlugin
                 SettingsModel.Character++;
                 await Manager.SetTitleAsync(args.context, $"{SettingsModel.Character} - {SettingsModel.Total}");
 
-                File.WriteAllText(path, $"{SettingsModel.CharacterString}: {SettingsModel.Character} - {SettingsModel.TotalString}: {SettingsModel.Total}");
+                File.WriteAllText(path, $"{SettingsModel.CharacterPrefix}: {SettingsModel.Character} - {SettingsModel.TotalPrefix}: {SettingsModel.Total}");
 
                 await Manager.SetSettingsAsync(args.context, SettingsModel);
 
@@ -49,7 +49,7 @@ namespace BotwynStreamDeckPlugin
                 SettingsModel.Character--;
                 await Manager.SetTitleAsync(args.context, $"{SettingsModel.Character} - {SettingsModel.Total}");
 
-                File.WriteAllText(path, $"{SettingsModel.CharacterString}: {SettingsModel.Character} - {SettingsModel.TotalString}: {SettingsModel.Total}");
+                File.WriteAllText(path, $"{SettingsModel.CharacterPrefix}: {SettingsModel.Character} - {SettingsModel.TotalPrefix}: {SettingsModel.Total}");
 
                 await Manager.SetSettingsAsync(args.context, SettingsModel);
 

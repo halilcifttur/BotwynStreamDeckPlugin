@@ -7,8 +7,8 @@
 		Character: 0,
 		IncrementApiURL: '',
 		DecrementApiURL: '',
-		CharacterString: '',
-		TotalString: ''
+		CharacterPrefix: '',
+		TotalPrefix: ''
 	};
 function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, inActionInfo) {
 	uuid = inUUID;
@@ -21,16 +21,16 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
 		settingsModel.Character = actionInfo.payload.settings.settingsModel.Character;
 		settingsModel.IncrementApiURL = actionInfo.payload.settings.settingsModel.IncrementApiURL;
 		settingsModel.DecrementApiURL = actionInfo.payload.settings.settingsModel.DecrementApiURL;
-		settingsModel.CharacterString = actionInfo.payload.settings.settingsModel.CharacterString;
-		settingsModel.TotalString = actionInfo.payload.settings.settingsModel.TotalString;
+		settingsModel.CharacterPrefix = actionInfo.payload.settings.settingsModel.CharacterPrefix;
+		settingsModel.TotalPrefix = actionInfo.payload.settings.settingsModel.TotalPrefix;
 	}
 
 	document.getElementById('txtTotalValue').value = settingsModel.Total;
 	document.getElementById('txtCharacterValue').value = settingsModel.Character;
 	document.getElementById('txtIncrementApiURLValue').value = settingsModel.IncrementApiURL;
 	document.getElementById('txtDecrementApiURLValue').value = settingsModel.DecrementApiURL;
-	document.getElementById('txtCharacterStringValue').value = settingsModel.CharacterString;
-	document.getElementById('txtTotalStringValue').value = settingsModel.TotalString;
+	document.getElementById('txtCharacterPrefixValue').value = settingsModel.CharacterPrefix;
+	document.getElementById('txtTotalPrefixValue').value = settingsModel.TotalPrefix;
 
 	websocket.onopen = function () {
 		var json = { event: inRegisterEvent, uuid: inUUID };
@@ -63,14 +63,14 @@ function connectElgatoStreamDeckSocket(inPort, inUUID, inRegisterEvent, inInfo, 
 					document.getElementById('txtDecrementApiURLValue').value = settingsModel.DecrementApiURL;
 				}
 
-				if (jsonObj.payload.settings.settingsModel.CharacterString) {
-					settingsModel.CharacterString = jsonObj.payload.settings.settingsModel.CharacterString;
-					document.getElementById('txtCharacterStringValue').value = settingsModel.CharacterString;
+				if (jsonObj.payload.settings.settingsModel.CharacterPrefix) {
+					settingsModel.CharacterPrefix = jsonObj.payload.settings.settingsModel.CharacterPrefix;
+					document.getElementById('txtCharacterPrefixValue').value = settingsModel.CharacterPrefix;
 				}
 
-				if (jsonObj.payload.settings.settingsModel.TotalString) {
-					settingsModel.TotalString = jsonObj.payload.settings.settingsModel.TotalString;
-					document.getElementById('txtTotalStringValue').value = settingsModel.TotalString;
+				if (jsonObj.payload.settings.settingsModel.TotalPrefix) {
+					settingsModel.TotalPrefix = jsonObj.payload.settings.settingsModel.TotalPrefix;
+					document.getElementById('txtTotalPrefixValue').value = settingsModel.TotalPrefix;
 				}
 				break;
 			default:

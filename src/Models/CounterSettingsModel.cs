@@ -6,7 +6,7 @@
         public int Character { get; set; } = 0;
         public string IncrementApiURL { get; set; }
         public string DecrementApiURL { get; set; }
-        public string CharacterString { get; set; }
-        public string TotalString { get; set; }
+        public string CharacterPrefix { get; set; }
+        public string TotalPrefix { get; set; }
     }
 }
