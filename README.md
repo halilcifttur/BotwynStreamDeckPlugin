@@ -3,7 +3,7 @@
 ![](Images/Botwyn.png)
 ## Description
 
-A Stream Deck Plugin, Integrated with Counter Function of The [`Botwyn`](https://github.com/halilcifttur/eldwyn_botwyn) and Counter For Live Stream
+A Counter Plugin for Stream Deck and Live Streams, Integrated with Counter Function of The [`Botwyn`](https://github.com/halilcifttur/eldwyn_botwyn)
 ## Features
 
 - code written in C# and Javascript
