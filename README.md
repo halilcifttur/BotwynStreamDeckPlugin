@@ -4,7 +4,7 @@
 
 A Stream Deck Plugin, Integrated with Counter Function of The [`Botwyn`](https://github.com/halilcifttur/eldwyn_botwyn) and Counter For Live Stream
 
-    ![](Images/Botwyn.png)
+![](Images/Botwyn.png)
 
 ## Features
 
