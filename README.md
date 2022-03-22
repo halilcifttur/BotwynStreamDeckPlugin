@@ -1,11 +1,9 @@
 # Botwyn Stream Deck Plugin
 
+![](Images/Botwyn.png)
 ## Description
 
 A Stream Deck Plugin, Integrated with Counter Function of The [`Botwyn`](https://github.com/halilcifttur/eldwyn_botwyn) and Counter For Live Stream
-
-![](Images/Botwyn.png)
-
 ## Features
 
 - code written in C# and Javascript
