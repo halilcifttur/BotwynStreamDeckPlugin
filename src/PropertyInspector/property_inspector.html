@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Botwyn Stream Deck Plugin Property Inspector</title>
+	<link rel="stylesheet" href="css/sdpi.css">
+	<link rel="stylesheet" href="css/property-inspector.css">
+</head>
+<body>
+	<div class="sdpi-wrapper">
+
+		<div class="dev-info">
+			Developed by Elongef - Halil Ç.
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Initial Count for Main Character </div>
+			<input id="txtCharacterValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an inital character death number" onchange="setSettings(event.target.value, 'Character')" />
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Desc. for Main Character</div>
+			<input id="txtCharacterStringValue" class="sdpi-item-value" type="text" placeholder="Enter a description for character counter" onchange="setSettings(event.target.value, 'CharacterString')" />
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Initial Count for Total</div>
+			<input id="txtTotalValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an initial total death number" onchange="setSettings(event.target.value, 'Total')" />
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Desc. for Total</div>
+			<input id="txtTotalStringValue" class="sdpi-item-value" type="text" placeholder="Enter a description for total counter" onchange="setSettings(event.target.value, 'TotalString')" />
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Increment URL</div>
+			<input id="txtIncrementApiURLValue" class="sdpi-item-value" type="text" inputmode="url" placeholder="Enter an increment api URL" onchange="setSettings(event.target.value, 'IncrementApiURL')" />
+		</div>
+
+		<div class="sdpi-item" id="counter_value">
+			<div class="sdpi-item-label">Decrement URL</div>
+			<input id="txtDecrementApiURLValue" class="sdpi-item-value" type="text" inputmode="url" placeholder="Enter a decrement api URL" onchange="setSettings(event.target.value, 'DecrementApiURL')" />
+		</div>
+
+		<script src="js/property-inspector.js"></script>
+</body>
+</html>
