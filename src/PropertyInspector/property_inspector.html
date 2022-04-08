@@ -14,23 +14,36 @@
 		</div>
 
 		<div class="sdpi-item" id="counter_value">
-			<div class="sdpi-item-label">Initial Count for Main Character </div>
-			<input id="txtCharacterValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an inital character death number" onchange="setSettings(event.target.value, 'Character')" />
+			<div class="sdpi-item-label">Initial Count for 1st Counter</div>
+			<input id="txtCharacterValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an inital number" onchange="setSettings(event.target.value, 'Character')" />
 		</div>
 
 		<div class="sdpi-item" id="counter_value">
-			<div class="sdpi-item-label">Prefix for Main Character</div>
-			<input id="txtCharacterPrefixValue" class="sdpi-item-value" type="text" placeholder="Enter a prefix for character counter" onchange="setSettings(event.target.value, 'CharacterPrefix')" />
+			<div class="sdpi-item-label">Prefix for 1st Counter</div>
+			<input id="txtCharacterPrefixValue" class="sdpi-item-value" type="text" placeholder="Enter a prefix for 1st counter" onchange="setSettings(event.target.value, 'CharacterPrefix')" />
 		</div>
 
-		<div class="sdpi-item" id="counter_value">
-			<div class="sdpi-item-label">Initial Count for Total</div>
-			<input id="txtTotalValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an initial total death number" onchange="setSettings(event.target.value, 'Total')" />
-		</div>
+		<div type="checkbox" class="sdpi-item" id="counter_value">
+            <div class="sdpi-item-value">
+                <input id="isTotalActive" type="checkbox" value="" oninput="setSettings(event.target.checked, 'IsTotalActive')">
+                <label for="isTotalActive" class="sdpi-item-label"><span></span>Activate 2nd Counter</label>
+            </div>
+        </div>
 
-		<div class="sdpi-item" id="counter_value">
-			<div class="sdpi-item-label">Prefix for Total</div>
-			<input id="txtTotalPrefixValue" class="sdpi-item-value" type="text" placeholder="Enter a prefix for total counter" onchange="setSettings(event.target.value, 'TotalPrefix')" />
+		<div class="sdpi-item" id="secondCounter" style="display:none">
+			<div class="sdpi-item" id="counter_value">
+				<span></span>
+				<span></span>
+				<div class="sdpi-item-label">Initial Count for 2nd Counter</div>
+				<input id="txtTotalValue" class="sdpi-item-value" type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter an initial number" onchange="setSettings(event.target.value, 'Total')" />
+			</div>
+	
+			<div class="sdpi-item" id="counter_value">
+				<span></span>
+				<span></span>
+				<div class="sdpi-item-label">Prefix for 2nd Counter</div>
+				<input id="txtTotalPrefixValue" class="sdpi-item-value" type="text" placeholder="Enter a prefix for 2nd counter" onchange="setSettings(event.target.value, 'TotalPrefix')" />
+			</div>
 		</div>
 
 		<div class="sdpi-item" id="counter_value">
@@ -44,5 +57,17 @@
 		</div>
 
 		<script src="js/property-inspector.js"></script>
+		<script>
+			function toggleCheckbox() {
+			  var lfckv = document.getElementById("isTotalActive").checked;
+			  console.log(lfckv);
+			  if (lfckv) {
+			
+				document.getElementById("secondCounter").style.display = "block";
+			  } else {
+				document.getElementById("secondCounter").style.display = "none";
+			  }
+			}
+		</script>
 </body>
 </html>

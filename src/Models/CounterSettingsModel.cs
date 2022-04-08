@@ -8,5 +8,6 @@
         public string DecrementApiURL { get; set; }
         public string CharacterPrefix { get; set; }
         public string TotalPrefix { get; set; }
+        public bool IsTotalActive { get; set; }
     }
 }
