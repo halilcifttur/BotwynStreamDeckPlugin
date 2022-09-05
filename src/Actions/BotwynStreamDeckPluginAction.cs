@@ -13,6 +13,7 @@ namespace BotwynStreamDeckPlugin
         private const int DECREASE_COUNTER_KEYPRESS_LENGTH = 600;
         private DateTime keyPressStart;
         private bool longKeyPressed = false;
+        private string test;
 
         public override async Task OnKeyDown(StreamDeckEventPayload args)
         {
